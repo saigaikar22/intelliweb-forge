@@ -164,9 +164,11 @@ const Contact = () => {
             </div>
 
             {/* Resume Download */}
-            <Button variant="glass" size="xl" className="w-full">
-              <Download className="w-5 h-5" />
-              Download Resume
+            <Button variant="glass" size="xl" className="w-full" asChild>
+              <a href="/SAI_GAIKAR_CSE_1.pdf" download="Sai_Gaikar_Resume.pdf">
+                <Download className="w-5 h-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>
