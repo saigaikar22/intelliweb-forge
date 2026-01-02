@@ -36,8 +36,6 @@ const Hero = () => {
           {/* Title */}
           <p className="text-xl sm:text-2xl text-muted-foreground font-light animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-primary">MERN Full Stack Developer</span> | <span className="text-secondary">AI & ML Engineer</span>
-            <br className="hidden sm:block" />
-            <span className="text-foreground/80"> Startup Founder Aspirant</span>
           </p>
           
           {/* Tagline */}
