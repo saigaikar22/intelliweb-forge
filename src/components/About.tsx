@@ -1,4 +1,4 @@
-import { User, Target, Lightbulb, Rocket } from "lucide-react";
+import { User, Target, Lightbulb } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -16,11 +16,6 @@ const About = () => {
       icon: Lightbulb,
       title: "AI & Data Science",
       description: "Building intelligent solutions with machine learning and NLP",
-    },
-    {
-      icon: Rocket,
-      title: "Startup Mindset",
-      description: "Aspiring to create impactful SaaS and tech products",
     },
   ];
 

@@ -142,21 +142,6 @@ const Experience = () => {
               </div>
             </div>
 
-            {/* Vision Card */}
-            <div className="glass-card p-8 space-y-4 bg-gradient-to-br from-card/40 to-card/20">
-              <h4 className="text-lg font-semibold text-foreground">🚀 Startup Vision</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Aspiring to build SaaS products and AI-powered platforms that solve real business problems. 
-                Focused on automation, services, and productivity solutions.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {['SaaS', 'AI Products', 'Automation', 'Tech Entrepreneurship'].map((tag) => (
-                  <span key={tag} className="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
