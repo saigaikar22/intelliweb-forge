@@ -50,6 +50,16 @@ const Contact = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/SAI_GAIKAR_CSE_1.pdf';
+    link.download = 'Sai_Gaikar_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    toast.success("Resume download started!");
+  };
+
   return (
     <section id="contact" className="relative py-32 overflow-hidden">
       {/* Background */}
@@ -164,11 +174,9 @@ const Contact = () => {
             </div>
 
             {/* Resume Download */}
-            <Button variant="glass" size="xl" className="w-full" asChild>
-              <a href="/SAI_GAIKAR_CSE_1.pdf" download="Sai_Gaikar_Resume.pdf">
-                <Download className="w-5 h-5" />
-                Download Resume
-              </a>
+            <Button variant="glass" size="xl" className="w-full" onClick={handleDownloadResume}>
+              <Download className="w-5 h-5" />
+              Download Resume
             </Button>
           </div>
         </div>
